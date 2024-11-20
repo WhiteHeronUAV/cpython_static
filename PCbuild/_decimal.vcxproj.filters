@@ -48,9 +48,6 @@
     <ClInclude Include="..\Modules\_decimal\windows\mpdecimal.h">
       <Filter>Header Files\libmpdec</Filter>
     </ClInclude>
-    <ClInclude Include="$(mpdecimalDir)\libmpdec\mpdecimal64vc.h">
-      <Filter>Header Files\libmpdec</Filter>
-    </ClInclude>
     <ClInclude Include="$(mpdecimalDir)\libmpdec\numbertheory.h">
       <Filter>Header Files\libmpdec</Filter>
     </ClInclude>
@@ -69,6 +66,7 @@
     <ClInclude Include="$(mpdecimalDir)\libmpdec\vccompat.h">
       <Filter>Header Files\libmpdec</Filter>
     </ClInclude>
+    <ClInclude Include="$(mpdecimalDir)\libmpdec\mpdecimal32vc.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Modules\_decimal\_decimal.c">
