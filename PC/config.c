@@ -71,6 +71,7 @@ extern PyObject* PyInit__ast(void);
 extern PyObject* PyInit__io(void);
 extern PyObject* PyInit__pickle(void);
 extern PyObject* PyInit_atexit(void);
+extern PyObject* PyInit_pyexpat(void);
 extern PyObject* _PyWarnings_Init(void);
 extern PyObject* PyInit__string(void);
 extern PyObject* PyInit__stat(void);
@@ -173,6 +174,7 @@ struct _inittab _PyImport_Inittab[] = {
     {"_io", PyInit__io},
     {"_pickle", PyInit__pickle},
     {"atexit", PyInit_atexit},
+    {"pyexpat", PyInit_pyexpat},
     {"_stat", PyInit__stat},
     {"_opcode", PyInit__opcode},
 
