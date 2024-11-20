@@ -701,6 +701,22 @@
       <Project>{18cae28c-b454-46c1-87a0-493d91d97f03}</Project>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
     </ProjectReference>
+    <ProjectReference Include="_asyncio.vcxproj">
+      <Project>{384c224a-7474-476e-a01b-750ea7de918c}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="_ctypes.vcxproj">
+      <Project>{0e9791db-593a-465f-98bc-681011311618}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="_decimal.vcxproj">
+      <Project>{0e9791db-593a-465f-98bc-681011311617}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="_elementtree.vcxproj">
+      <Project>{17e1e049-c309-4d79-843f-ae483c264aea}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
     <ProjectReference Include="_socket.vcxproj">
       <Project>{86937f53-c189-40ef-8ce8-8759d8e7d480}</Project>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>

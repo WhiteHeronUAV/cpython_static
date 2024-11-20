@@ -80,6 +80,10 @@ extern PyObject* PyInit__stat(void);
 extern PyObject* PyInit__opcode(void);
 extern PyObject* PyInit__contextvars(void);
 extern PyObject* PyInit__tokenize(void);
+extern PyObject* PyInit__ctypes(void);
+extern PyObject* PyInit__decimal(void);
+extern PyObject* PyInit__asyncio(void);
+extern PyObject* PyInit__elementtree(void);
 
 /* tools/freeze/makeconfig.py marker for additional "extern" */
 /* -- ADDMODULE MARKER 1 -- */
@@ -181,6 +185,10 @@ struct _inittab _PyImport_Inittab[] = {
     {"_stat", PyInit__stat},
     {"_opcode", PyInit__opcode},
     {"_socket", PyInit__socket},
+    {"_ctypes", PyInit__ctypes},
+    {"_decimal", PyInit__decimal},
+    {"_asyncio", PyInit__asyncio},
+    {"_elementtree", PyInit__elementtree},
 
     {"_contextvars", PyInit__contextvars},
 
