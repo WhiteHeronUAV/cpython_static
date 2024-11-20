@@ -60,9 +60,6 @@
     <ClInclude Include="..\Include\ceval.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="..\Include\code.h">
-      <Filter>Include</Filter>
-    </ClInclude>
     <ClInclude Include="..\Include\codecs.h">
       <Filter>Include</Filter>
     </ClInclude>
@@ -321,9 +318,6 @@
     <ClInclude Include="..\PC\errmap.h">
       <Filter>PC</Filter>
     </ClInclude>
-    <ClInclude Include="..\PC\pyconfig.h">
-      <Filter>PC</Filter>
-    </ClInclude>
     <ClInclude Include="..\Python\stdlib_module_names.h">
       <Filter>Python</Filter>
     </ClInclude>
@@ -450,13 +444,7 @@
     <ClInclude Include="..\Include\cpython\pyatomic.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="..\Include\cpython\pyatomic_gcc.h">
-      <Filter>Include</Filter>
-    </ClInclude>
     <ClInclude Include="..\Include\cpython\pyatomic_msc.h">
-      <Filter>Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Include\cpython\pyatomic_std.h">
       <Filter>Include</Filter>
     </ClInclude>
     <ClInclude Include="..\Include\cpython\pyctype.h">
@@ -852,42 +840,13 @@
     <ClInclude Include="..\Include\internal\mimalloc\mimalloc\types.h">
       <Filter>Include\internal\mimalloc</Filter>
     </ClInclude>
-    <ClInclude Include="$(zlibDir)\crc32.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\deflate.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\inffast.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\inffixed.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\inflate.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\inftrees.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\trees.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\zconf.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\zconf.in.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\zlib.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="$(zlibDir)\zutil.h">
-      <Filter>Modules\zlib</Filter>
-    </ClInclude>
     <ClInclude Include="..\Include\internal\pycore_structseq.h">
       <Filter>Include\internal</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\internal\pycore_backoff.h" />
+    <ClInclude Include="..\Include\internal\pycore_cfg.h" />
+    <ClInclude Include="..\Include\opcode.h" />
+    <ClInclude Include="..\PC\pyconfig.h.in" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Modules\_abc.c">
@@ -1049,9 +1008,6 @@
     <ClCompile Include="..\Modules\xxsubtype.c">
       <Filter>Modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\Modules\zlibmodule.c">
-      <Filter>Modules</Filter>
-    </ClCompile>
     <ClCompile Include="..\Modules\_io\fileio.c">
       <Filter>Modules\_io</Filter>
     </ClCompile>
@@ -1098,9 +1054,6 @@
       <Filter>Modules\cjkcodecs</Filter>
     </ClCompile>
     <ClCompile Include="..\Objects\abstract.c">
-      <Filter>Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Objects\accu.c">
       <Filter>Objects</Filter>
     </ClCompile>
     <ClCompile Include="..\Objects\boolobject.c">
@@ -1292,9 +1245,6 @@
     <ClCompile Include="..\Python\critical_section.c">
       <Filter>Python</Filter>
     </ClCompile>
-    <ClCompile Include="..\Python\crossinterp.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\Python\dynamic_annotations.c">
       <Filter>Python</Filter>
     </ClCompile>
@@ -1364,23 +1314,8 @@
     <ClCompile Include="..\Python\interpconfig.c">
       <Filter>Python</Filter>
     </ClCompile>
-    <ClCompile Include="..\Python\intrinsics.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Python\instruction_sequence.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Python\instrumentation.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\Python\jit.c">
       <Filter>Python</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Python\legacy_tracing.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Python\lock.c">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Python\marshal.c">
       <Filter>Python</Filter>
@@ -1514,39 +1449,6 @@
     <ClCompile Include="..\Modules\_contextvarsmodule.c">
       <Filter>Modules</Filter>
     </ClCompile>
-    <ClCompile Include="$(zlibDir)\adler32.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\compress.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\crc32.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\deflate.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\infback.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\inffast.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\inflate.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\inftrees.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\trees.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\uncompr.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="$(zlibDir)\zutil.c">
-      <Filter>Modules\zlib</Filter>
-    </ClCompile>
     <ClCompile Include="..\Python\hamt.c">
       <Filter>Python</Filter>
     </ClCompile>
@@ -1604,6 +1506,12 @@
     <ClCompile Include="..\Modules\getbuildinfo.c">
       <Filter>Modules</Filter>
     </ClCompile>
+    <ClCompile Include="..\Python\crossinterp.c" />
+    <ClCompile Include="..\Python\intrinsics.c" />
+    <ClCompile Include="..\Python\instruction_sequence.c" />
+    <ClCompile Include="..\Python\instrumentation.c" />
+    <ClCompile Include="..\Python\legacy_tracing.c" />
+    <ClCompile Include="..\Python\lock.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\PC\python_nt.rc">
