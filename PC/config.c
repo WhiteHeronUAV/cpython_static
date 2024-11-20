@@ -54,6 +54,7 @@ extern PyObject* PyInit__struct(void);
 extern PyObject* PyInit__datetime(void);
 extern PyObject* PyInit__functools(void);
 extern PyObject* PyInit__json(void);
+extern PyObject* PyInit__socket(void);
 #ifdef _Py_HAVE_ZLIB
 extern PyObject* PyInit_zlib(void);
 #endif
@@ -177,6 +178,7 @@ struct _inittab _PyImport_Inittab[] = {
     {"pyexpat", PyInit_pyexpat},
     {"_stat", PyInit__stat},
     {"_opcode", PyInit__opcode},
+    {"_socket", PyInit__socket},
 
     {"_contextvars", PyInit__contextvars},
 

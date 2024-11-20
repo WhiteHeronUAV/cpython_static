@@ -697,6 +697,10 @@
       <Project>{d06b6426-4762-44cc-8bad-d79052507f2f}</Project>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
     </ProjectReference>
+    <ProjectReference Include="_socket.vcxproj">
+      <Project>{86937f53-c189-40ef-8ce8-8759d8e7d480}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
